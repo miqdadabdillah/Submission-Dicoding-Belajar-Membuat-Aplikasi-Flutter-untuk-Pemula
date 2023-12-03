@@ -24,10 +24,12 @@ class StartedPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: constraints.maxWidth > 600
+                          ? CrossAxisAlignment.center
+                          : CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Cari dan Bagikan Rekomendasi Buku Pilihanmu!',
+                          'Temukan Pengetahuan Anda di Perpustakaan Elektronik',
                           style: GoogleFonts.poppins(
                               fontSize: constraints.maxWidth > 600 ? 32 : 20,
                               color: Colors.white,
@@ -35,9 +37,9 @@ class StartedPage extends StatelessWidget {
                         ),
                         const SizedBox(height: 20),
                         Text(
-                          'Dapatkan inspirasi sekarang!',
+                          'Membaca Tanpa Batasan, Belajar Tanpa Henti',
                           style: GoogleFonts.poppins(
-                              fontSize: constraints.maxWidth > 600 ? 14 : 10,
+                              fontSize: constraints.maxWidth > 600 ? 18 : 10,
                               color: Colors.white,
                               fontWeight: FontWeight.w300),
                         ),
