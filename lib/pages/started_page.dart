@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:miqdadapp/pages/login_page.dart';
 
 class StartedPage extends StatelessWidget {
   const StartedPage({super.key});
@@ -29,7 +30,7 @@ class StartedPage extends StatelessWidget {
                           : CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Temukan Pengetahuan Anda di Perpustakaan Elektronik',
+                          'Temukan Pengetahuan Anda di e-Perpustakaan Modern',
                           style: GoogleFonts.poppins(
                               fontSize: constraints.maxWidth > 600 ? 32 : 20,
                               color: Colors.white,
@@ -82,7 +83,13 @@ class StartedPage extends StatelessWidget {
                                   side: const BorderSide(color: Colors.white),
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(66))),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const LoginPage()),
+                                );
+                              },
                               child: Text(
                                 'Sign In',
                                 style: GoogleFonts.poppins(
