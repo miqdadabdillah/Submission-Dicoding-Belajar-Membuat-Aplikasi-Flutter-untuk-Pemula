@@ -34,15 +34,15 @@ class StartedPage extends StatelessWidget {
                           style: GoogleFonts.poppins(
                               fontSize: constraints.maxWidth > 600 ? 32 : 20,
                               color: Colors.white,
-                              fontWeight: FontWeight.normal),
+                              fontWeight: FontWeight.w600),
                         ),
                         const SizedBox(height: 20),
                         Text(
                           'Membaca Tanpa Batasan, Belajar Tanpa Henti',
                           style: GoogleFonts.poppins(
-                              fontSize: constraints.maxWidth > 600 ? 18 : 10,
+                              fontSize: constraints.maxWidth > 600 ? 18 : 16,
                               color: Colors.white,
-                              fontWeight: FontWeight.w300),
+                              fontWeight: FontWeight.w400),
                         ),
                       ],
                     ),
@@ -64,14 +64,13 @@ class StartedPage extends StatelessWidget {
                                 'Get Started',
                                 style: GoogleFonts.poppins(
                                     color: const Color(0xff404040),
-                                    fontSize:
-                                        constraints.maxWidth > 600 ? 14 : 10,
+                                    fontSize: 14,
                                     fontWeight: FontWeight.w500),
                               ),
                             ),
                           ),
                         ),
-                        SizedBox(height: constraints.maxWidth > 600 ? 16 : 16),
+                        const SizedBox(height: 16),
                         Center(
                           child: SizedBox(
                             width: constraints.maxWidth > 600
@@ -94,8 +93,7 @@ class StartedPage extends StatelessWidget {
                                 'Sign In',
                                 style: GoogleFonts.poppins(
                                     color: Colors.white,
-                                    fontSize:
-                                        constraints.maxWidth > 600 ? 14 : 10,
+                                    fontSize: 14,
                                     fontWeight: FontWeight.w500),
                               ),
                             ),
